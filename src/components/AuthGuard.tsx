@@ -32,7 +32,7 @@ export default function AuthGuard({ children }: AuthGuardProps) {
       setIsAuthenticated(true);
       setError(null);
     } else {
-      setError('Invalid email or password. Use the dummy credentials provided below.');
+      setError('Invalid email or password.');
     }
   };
 
@@ -102,18 +102,6 @@ export default function AuthGuard({ children }: AuthGuardProps) {
               Sign In
             </button>
           </form>
-
-          {/* Dummy Credentials Banner */}
-          <div className="bg-slate-900/40 border border-slate-800/80 rounded-xl p-4 text-xs space-y-2">
-            <div className="flex items-center gap-2 text-amber-400 font-bold">
-              <KeyRound className="w-4 h-4" />
-              <span>Dummy Testing Credentials</span>
-            </div>
-            <div className="text-slate-400 space-y-1">
-              <p>Email: <code className="bg-slate-950 px-1 py-0.5 rounded text-white font-mono">{DUMMY_EMAIL}</code></p>
-              <p>Password: <code className="bg-slate-950 px-1 py-0.5 rounded text-white font-mono">{DUMMY_PASSWORD}</code></p>
-            </div>
-          </div>
         </div>
       </main>
     );
