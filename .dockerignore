@@ -1,0 +1,9 @@
+# next.js output tracing exclusion
+Dockerfile
+.dockerignore
+node_modules
+.next
+README.md
+.git
+.gitignore
+.env*.local
