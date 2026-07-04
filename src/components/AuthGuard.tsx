@@ -102,6 +102,10 @@ export default function AuthGuard({ children }: AuthGuardProps) {
               Sign In
             </button>
           </form>
+
+          <p className="text-center text-xs text-slate-500">
+            Note: Dummy credentials for testing are available in the repository's <code className="bg-slate-900 px-1 py-0.5 rounded text-slate-400 font-mono">README.md</code> file.
+          </p>
         </div>
       </main>
     );
